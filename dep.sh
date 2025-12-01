@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo yum update -y
 sudo yum install httpd -y
-sudo stystemctl start httpd
-sudo systemctl enable httpd
+sudo service httpd start
+sudo chkconfig httpd on
 rm /var/www/html/index.html
